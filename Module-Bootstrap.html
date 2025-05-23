@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Local Community Event Portal</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      color: #343a40;
+    }
+    header {
+      background: linear-gradient(135deg, #ff5f6d, #ffc371);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #ff5f6d;
+    }
+    .navbar-brand:hover {
+      color: #ffc371;
+    }
+    .btn-outline-primary:hover, .btn-outline-secondary:hover {
+      background-color: #ff5f6d;
+      color: white;
+    }
+    .card {
+      border: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .bg-gradient-custom {
+      background: linear-gradient(to right, #a18cd1, #fbc2eb);
+    }
+    .footer {
+      background-color: #6c5ce7;
+      color: white;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Local Community Event Portal</h1>
+    <p class="lead">Connect, Discover, and Celebrate Events Around You</p>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">🎉 LCEP</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search Events" />
+          <button class="btn btn-outline-primary">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Grid Layout -->
+  <div class="container mt-5">
+    <div class="row text-center mb-4">
+      <div class="col-12 col-md-6 col-lg-4 bg-warning py-3">Workshops</div>
+      <div class="col-12 col-md-6 col-lg-4 bg-info py-3">Clean-Up Drives</div>
+      <div class="col-12 col-md-12 col-lg-4 bg-success text-white py-3">Festivals</div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 bg-secondary text-white p-3">Navigation</div>
+      <div class="col-md-9 p-3 bg-white border">Details about the selected event will appear here.</div>
+    </div>
+
+    <div class="row text-center my-4">
+      <div class="col-sm-3 bg-danger text-white py-2">Fundraisers</div>
+      <div class="col-sm-3 bg-primary text-white py-2">Art Shows</div>
+      <div class="col-sm-3 bg-warning text-dark py-2">Community Meals</div>
+      <div class="col-sm-3 bg-success text-white py-2">Local Concerts</div>
+    </div>
+
+    <div class="row justify-content-center align-items-center" style="height: 200px;">
+      <div class="col-4 order-md-2 bg-light text-center py-2">Details Section</div>
+      <div class="col-4 order-md-1 bg-light text-center py-2">Highlights</div>
+    </div>
+
+    <!-- Responsive Flexbox -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-5">
+      <div class="p-2">Volunteer Info</div>
+      <div class="p-2">Sponsorships</div>
+    </div>
+  </div>
+
+  <!-- Typography -->
+  <div class="container text-center my-5">
+    <h2 class="display-4 text-danger">Upcoming Community Highlights</h2>
+    <p class="lead text-muted fw-bold text-uppercase">Discover events and engage with your neighborhood</p>
+  </div>
+
+  <!-- Form Example -->
+  <div class="container">
+    <form>
+      <div class="mb-3">
+        <label for="nameInput" class="form-label">Full Name</label>
+        <input id="nameInput" type="text" class="form-control" placeholder="Enter your full name">
+      </div>
+      <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="agreeCheck">
+        <label class="form-check-label" for="agreeCheck">I want to receive event updates</label>
+      </div>
+      <button type="submit" class="btn btn-success">Join Now</button>
+    </form>
+  </div>
+
+  <!-- Buttons -->
+  <div class="container my-4">
+    <button class="btn btn-danger">Donate</button>
+    <div class="btn-group">
+      <button class="btn btn-outline-secondary">Volunteer</button>
+      <button class="btn btn-outline-secondary">Share</button>
+    </div>
+  </div>
+
+  <!-- Card Example -->
+  <div class="container mb-5">
+    <div class="card bg-gradient-custom text-center" style="width: 18rem;">
+      <img src="https://via.placeholder.com/300" class="card-img-top" alt="Event Image">
+      <div class="card-body">
+        <h5 class="card-title">Community Leader</h5>
+        <p class="card-text">Recognizing outstanding contributions in local events.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Utility Classes -->
+  <div class="container mb-5">
+    <div class="m-3 p-4 bg-light">Spacing Example</div>
+    <div class="bg-warning text-dark p-3">Safety Guidelines</div>
+    <div class="bg-dark text-white bg-gradient p-3">Evening Highlights</div>
+    <div class="d-none d-md-block">Visible on tablets and larger</div>
+    <div class="d-lg-flex">Visible on large screens</div>
+    <img src="https://via.placeholder.com/100" class="border border-3 border-primary rounded-circle shadow-lg mt-3" alt="Avatar">
+  </div>
+
+  <!-- Badge and Position Example -->
+  <div class="position-relative text-center mb-5">
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">New</span>
+    <button class="btn btn-outline-primary">Inbox</button>
+  </div>
+
+  <!-- Bootstrap Icons -->
+  <div class="text-center mb-4">
+    <i class="bi bi-facebook fs-1 text-primary"></i>
+    <i class="bi bi-twitter fs-1 text-info"></i>
+    <i class="bi bi-instagram fs-1 text-danger"></i>
+  </div>
+
+  <!-- Modal Trigger and Structure -->
+  <div class="text-center mb-5">
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">View Welcome Message</button>
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content p-3">
+        <div class="modal-header">
+          <h5 class="modal-title">Welcome to Our Community</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Stay connected with exciting events happening in your local area!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <p>&copy; 2025 Local Community Event Portal. Empowering Neighborhood Connections.</p>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
